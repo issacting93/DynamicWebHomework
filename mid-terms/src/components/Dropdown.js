@@ -1,5 +1,3 @@
-// Dropdown.jsx
-
 import React, { useState, useRef, useEffect } from 'react';
 import { GoChevronDown } from 'react-icons/go';
 import cx from 'classnames';
@@ -16,7 +14,7 @@ const Dropdown = ({
     const [selectedOption, setSelectedOption] = useState(null);
     const dropdownRef = useRef();
 
-    // Handle clicks outside the dropdown
+    // close when clicking outside
     useEffect(() => {
         const handler = (event) => {
             if (!dropdownRef.current?.contains(event.target)) {
@@ -45,7 +43,7 @@ const Dropdown = ({
     const renderedOptions = options.map((option, index) => (
         <div 
             key={option.value || index}
-            className="px-4 py-2 cursor-pointer hover:bg-blue-50 transition-colors first:rounded-t-md last:rounded-b-md"
+            className="px-4 py-2 cursor-pointer hover:bg-blue-50 transition-colors text-black first:rounded-t-md last:rounded-b-md"
             onClick={() => handleOptionClick(option)}
         >
             {option.label}
@@ -53,11 +51,11 @@ const Dropdown = ({
     ));
 
     return (
-        <div className={`relative ${className}`} ref={dropdownRef}> 
-            {/* Custom dropdown trigger */}
+        <div className={`relative ${className}`} ref={dropdownRef}>
+          
             <div 
                 className={cx(
-                    'w-full p-4 border border-gray-300 rounded-md bg-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors',
+                    'w-full p-4 border border-gray-300 rounded-md bg-black white-text cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors',
                     {
                         'opacity-50 cursor-not-allowed': disabled,
                         'hover:border-gray-400': !disabled
@@ -71,7 +69,7 @@ const Dropdown = ({
                     </span>
                     <GoChevronDown 
                         className={cx(
-                            'h-5 w-5 text-blue-500 transition-transform duration-200',
+                            'h-5 w-5 text-yellow-500 transition-transform duration-200',
                             {
                                 'rotate-180': isOpen,
                                 'text-gray-400': disabled
@@ -81,7 +79,7 @@ const Dropdown = ({
                 </div>
             </div>
 
-            {/* Custom dropdown options */}
+            {/* dropdown menu */}
             {isOpen && !disabled && (
                 <div className="absolute top-full left-0 w-full bg-white border border-gray-300 rounded-md  mt-1 z-10 max-h-60 overflow-y-auto">
                     {renderedOptions}
@@ -90,24 +88,6 @@ const Dropdown = ({
         </div>
     );
 };
-
-// Panel.jsx
-
-export const Panel = ({ 
-    className = '', 
-    children, 
-    ...rest 
-}) => {
-    const finalClassName = cx(
-        'bg-white w-full p-4 border border-gray-300 rounded-md',
-        className
-    );
-    
-    return (
-        <div {...rest} className={finalClassName}>
-            {children}
-        </div>
-    );
-};
+ 
 
 export default Dropdown;

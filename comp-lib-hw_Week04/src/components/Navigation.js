@@ -18,9 +18,8 @@ const Navigation = () => {
                     <Link 
                         to="/" 
                         className="flex items-center space-x-2 text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors"
-                    >
-                        <span className="material-icons text-2xl">widgets</span>
-                        <span> Dynamic Web</span>
+                    > 
+                        <span> Sequencer </span>
                     </Link>
 
                     {/* Navigation Links */}
@@ -45,56 +44,7 @@ const Navigation = () => {
                         >
                             Button
                         </Link>
-                        <Link
-                            to="/components/carousel"
-                            className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                                isActive('/components/carousel') 
-                                    ? 'text-blue-600 bg-blue-50' 
-                                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                            }`}
-                        >
-                            Carousel
-                        </Link>
-                        <Link
-                            to="/components/banner"
-                            className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                                isActive('/components/banner') 
-                                    ? 'text-blue-600 bg-blue-50' 
-                                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                            }`}
-                        >
-                            Banner
-                        </Link>
-                        <Link
-                            to="/components/accordion"
-                            className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                                isActive('/components/accordion') 
-                                    ? 'text-blue-600 bg-blue-50' 
-                                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                            }`}
-                        >
-                            Accordion
-                        </Link>
-                        <Link
-                            to="/components/dropdown"
-                            className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                                isActive('/components/dropdown') 
-                                    ? 'text-blue-600 bg-blue-50' 
-                                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                            }`}
-                        >
-                            Dropdown
-                        </Link>
-                        <Link
-                            to="/components/hero"
-                            className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                                isActive('/components/hero') 
-                                    ? 'text-blue-600 bg-blue-50' 
-                                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
-                            }`}
-                        >
-                            Hero
-                        </Link>
+                          
                     </div>
 
                     {/* Mobile Menu Button */}

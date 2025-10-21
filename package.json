@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "audiomotion-analyzer": "^4.5.1",
+    "tone": "^15.1.22"
+  }
+}

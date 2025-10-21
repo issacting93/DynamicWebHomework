@@ -1,12 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navigation from './components/Navigation' 
-import ButtonPage from './pages/ButtonPage'
-import CarouselPage from './pages/CarouselPage'
-import BannerPage from './pages/BannerPage'
-import AccordionPage from './pages/AccordionPage'
-import DropdownPage from './pages/DropdownPage'
+import Navigation from './components/Navigation'  
 import HeroPage from './pages/HeroPage'  
+import SequencerPage from './pages/SequencerPage'
 
 
 const App = () => {
@@ -16,14 +12,9 @@ const App = () => {
         <Navigation />
         <Routes>
           {/* Dashboard/Home Route */}
-          <Route path="/" element={< HeroPage />} />
+          <Route path="/" element={< SequencerPage />} />
           
-          {/* Component Routes */}
-          <Route path="/components/button" element={<ButtonPage />} />
-          <Route path="/components/carousel" element={<CarouselPage />} />
-          <Route path="/components/banner" element={<BannerPage />} />
-          <Route path="/components/accordion" element={<AccordionPage />} />
-          <Route path="/components/dropdown" element={<DropdownPage />} /> 
+          {/* Component Routes */} 
 
           {/* 404 Fallback */}
           <Route path="*" element={
