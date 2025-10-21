@@ -13,8 +13,8 @@ const App = () => {
         <Navigation />
         <Routes>
           <Route path="/" element={<SequencerPage />} />
-          <Route path="/grid" element={<GridPage />} />
-          <Route path="/controls" element={<ControlsPage />} />
+          <Route path="/controls" element={<GridPage />} />
+          <Route path="/grid" element={<ControlsPage />} />
           <Route path="/set-up" element={<SetupPage />} />
         </Routes>
       </div>
