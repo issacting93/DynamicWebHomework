@@ -1,9 +1,5 @@
 # Dynamic Web Homework
 
-A collection of React projects demonstrating progressive learning in modern web development, from basic components to advanced audio visualization.
-
----
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -297,9 +293,7 @@ DynamicWebHomework/
 ---
 
 ## Assignment Status
-
-For a complete breakdown of assignments and their completion status, see **[ASSIGNMENT_STATUS.md](./ASSIGNMENT_STATUS.md)**.
-
+ 
 **Quick Summary:**
 - Week03 - Memory Game
 - Week04 - Component Library
