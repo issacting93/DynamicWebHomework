@@ -1,0 +1,51 @@
+.circle-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-slider-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.circle-slider-bg {
+  stroke: #ffffff;
+  opacity: 1;
+}
+
+.circle-slider-progress {
+  stroke: #F33833;
+  transition: stroke-dashoffset 0.1s ease-out;
+}
+
+.circle-slider-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.circle-slider-label {
+  font-family: 'Courier New', monospace;
+  font-size: 10px;
+  color: var(--text-color, #1C1C1C);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2px;
+  transition: color 0.8s ease;
+}
+
+.circle-slider-value {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--text-color, #1C1C1C);
+  transition: color 0.8s ease;
+}
+

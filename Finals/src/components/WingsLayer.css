@@ -1,0 +1,54 @@
+.wings-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.wings-layer--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wings-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transform: scale(1);
+  filter:  hue-rotate(0deg);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  animation: hueRotate 3s linear infinite;
+  will-change: filter;
+  margin-left: 7px;
+}
+
+.wings-layer--visible .wings-svg {
+  opacity: 0.3;
+  transform: scale(1.75);
+}
+
+@keyframes hueRotate {
+  0% {
+    opacity: 0.2;
+    filter: hue-rotate(0deg) invert(1);
+  }
+  50% {
+    opacity:1;
+    filter: hue-rotate(360deg) invert(0);
+  }
+  100% {
+    opacity:0.2;
+    filter: hue-rotate(360deg) invert(1);
+  }
+}
+
