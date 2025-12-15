@@ -176,56 +176,7 @@ Exercise project comparing state management vs Context API.
 
 **Tech:** React, Context API, Tailwind CSS
 
----
-
-## Tech Stack
-
-### Core Technologies
-- **React** - UI framework
-- **JavaScript (ES6+)** - Programming language
-- **Node.js** - Runtime environment
-- **npm** - Package manager
-
-### Libraries & Tools
-- **Three.js** - 3D graphics
-- **Tone.js** - Web Audio synthesis
-- **React Router** - Routing
-- **Axios** - HTTP client
-- **JSON Server** - Mock REST API
-- **Tailwind CSS** - Utility-first CSS
-- **Vite** - Build tool
-- **Web Audio API** - Audio processing
-
-### State Management
-- **React Context API** - Global state
-- **useState** - Local component state
-- **Custom Hooks** - Reusable logic
-
----
-
-## Learning Progression
-
-### Phase 1: Fundamentals
-1. **Component Basics** - Building reusable UI components
-2. **State Management** - useState and component state
-3. **Event Handling** - User interactions
-
-### Phase 2: Data & APIs
-4. **API Integration** - Fetching external data
-5. **Data Persistence** - JSON Server and CRUD operations
-6. **Component Composition** - Building complex UIs
-
-### Phase 3: Advanced Patterns
-7. **Context API** - Global state management
-8. **Custom Hooks** - Reusable logic extraction
-9. **Routing** - Multi-page applications
-
-### Phase 4: Advanced Topics
-10. **Audio Processing** - Web Audio API
-11. **3D Graphics** - Three.js integration
-12. **Shader Programming** - GLSL and GPU acceleration
-
----
+--- 
 
 ## Getting Started
 
@@ -281,16 +232,7 @@ DynamicWebHomework/
 ```
 
 ---
-
-## Notes
-
-- Each project folder contains its own `README.md` with specific instructions
-- Projects are independent and can be run separately
-- Some projects require additional setup (e.g., JSON Server for Week09 projects)
-- Check individual project READMEs for detailed setup instructions
-- See [ASSIGNMENT_STATUS.md](./ASSIGNMENT_STATUS.md) for detailed assignment tracking
-
----
+ 
 
 ## Assignment Status
  
@@ -301,21 +243,7 @@ DynamicWebHomework/
 - Week09 - Context API (3 versions)
 - Midterm Project - Digital Synthesizer
 - Final Project - Audio Visualizer
-
----
-
-## Key Learning Outcomes
-
-- React component architecture
-- State management patterns (useState, Context API)
-- API integration and data fetching
-- Custom hooks and reusable logic
-- Routing and navigation
-- Audio processing and visualization
-- 3D graphics with Three.js
-- Shader programming
-- Modern build tools (Vite, Webpack)
-- CSS frameworks (Tailwind CSS)
+ 
 
 ---
 
